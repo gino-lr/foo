@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Metronome App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Metronome App</h1>
+    <p>Set the tempo and start the metronome.</p>
+
+    <div class="metronome">
+        <label for="tempo1">Metronome 1 Tempo:</label>
+        <input type="number" id="tempo1" value="120">
+        <button onclick="startMetronome(1)">Start</button>
+        <button onclick="stopMetronome(1)">Stop</button>
+    </div>
+
+    <div class="metronome">
+        <label for="tempo2">Metronome 2 Tempo:</label>
+        <input type="number" id="tempo2" value="120">
+        <button onclick="startMetronome(2)">Start</button>
+        <button onclick="stopMetronome(2)">Stop</button>
+    </div>
+
+    <audio id="clickSound" src="click.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
