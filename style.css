@@ -1,39 +1,48 @@
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-h1 {
-  font-size: 48px;
-  margin-top: 50px;
-}
-
-.controls {
-  margin-top: 50px;
-}
-
-button {
-  font-size: 24px;
-  padding: 10px;
-  margin: 10px;
+body {
+    display: flex;
+    justify-content: center;
 }
 
 .tempo {
-  margin-top: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
 }
 
-label {
-  font-size: 24px;
+#tempo-display {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
 }
 
-input {
-  font-size: 24px;
-  padding: 10px;
-  margin: 10px;
-  width: 100px;
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
 
-span {
-  font-size: 24px;
+.tempo label {
+    margin-right: 10px;
+}
+
+.tempo-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.tempo-buttons button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tempo-buttons button:hover {
+    background-color: #000;
+    color: #fff;
 }
