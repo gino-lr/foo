@@ -1,32 +1,42 @@
 const audio = new Audio('click.mp3');
 let intervalId;
-let tempo = 120;
+let tempo = 100;
 
 function playClick() {
-  audio.currentTime = 0;
-  audio.play();
+    audio.currentTime = 0;
+    audio.play();
 }
 
 function startMetronome() {
-  const delay = 60000 / tempo;
-  intervalId = setInterval(playClick, delay);
+    const delay = 60000 / tempo;
+    intervalId = setInterval(playClick, delay);    
 }
 
 function stopMetronome() {
-  clearInterval(intervalId);
+    clearInterval(intervalId);
 }
 
 function setTempo(newTempo) {
-  tempo = newTempo;
-  document.getElementById('tempo-display').textContent = `${tempo} BPM`;
+    tempo = newTempo;
+    document.getElementById('tempo-display').textContent = `${tempo} BPM`;
+    console.log(tempo);
 }
 
-const startButton = document.getElementById('start');
 const stopButton = document.getElementById('stop');
-const tempo90Button = document.getElementById('tempo-90');
-const tempo150Button = document.getElementById('tempo-150');
-startButton.addEventListener('click', startMetronome);
+const tempoButton1 = document.getElementById('tempo-1');
+const tempoButton2 = document.getElementById('tempo-2');
 stopButton.addEventListener('click', stopMetronome);
-tempo90Button.addEventListener('click', () => setTempo(90));
-tempo150Button.addEventListener('click', () => setTempo(150));
+tempoButton1.addEventListener('click', () => {
+    tempo = 90;
+    stopMetronome();
+    startMetronome();
+    setTempo(tempo);
+});
+tempoButton2.addEventListener('click', () => {
+    tempo = 150;
+    stopMetronome();
+    startMetronome();
+    setTempo(tempo);
+});
+
 setTempo(tempo);

@@ -7,6 +7,7 @@ body {
     display: flex;
     align-items: center;
     margin-top: 20px;
+    justify-content: center;
 }
 
 #tempo-display {
@@ -23,6 +24,11 @@ body {
     margin-top: 20px;
 }
 
+#stop {
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
 .tempo label {
     margin-right: 10px;
 }
@@ -30,6 +36,7 @@ body {
 .tempo-buttons {
     display: flex;
     flex-direction: column;
+    
 }
 
 .tempo-buttons button {
