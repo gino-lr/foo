@@ -1,5 +1,39 @@
-.metronome {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 20px;
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  margin-top: 50px;
+}
+
+.controls {
+  margin-top: 50px;
+}
+
+button {
+  font-size: 24px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.tempo {
+  margin-top: 50px;
+}
+
+label {
+  font-size: 24px;
+}
+
+input {
+  font-size: 24px;
+  padding: 10px;
+  margin: 10px;
+  width: 100px;
+}
+
+span {
+  font-size: 24px;
 }
