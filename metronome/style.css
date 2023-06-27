@@ -69,11 +69,6 @@ h1 {
     color: #fff;
 }
 
-.button-row {
-    display: flex;
-    flex-direction: row;
-}
-
 #tempo-1,
 #tempo-2 {
     width: 100px;
@@ -103,4 +98,52 @@ footer {
     position: absolute;
     bottom: 0;
     width: 99%;
+}
+
+@media (max-width: 1080px) {
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin: auto;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .tempo-buttons {
+        width: 100%;
+        align-items: center;
+    }
+
+    .button-row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #tempo-1,
+    #tempo-2 {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 2rem;
+    }
+
+    #tempo-1-decrease,
+    #tempo-1-increase,
+    #tempo-2-decrease,
+    #tempo-2-increase {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    #stop {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    footer {
+        font-size: 1.5rem;
+    }
 }
